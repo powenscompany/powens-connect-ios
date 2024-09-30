@@ -1,0 +1,2997 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name PowensConnect
+import Foundation
+@_exported import PowensConnect
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@frozen public enum Kotlinx_datetimeDayOfWeek : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeDayOfWeek, result: inout PowensConnect.Kotlinx_datetimeDayOfWeek?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeDayOfWeek, result: inout PowensConnect.Kotlinx_datetimeDayOfWeek?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeDayOfWeek?) -> PowensConnect.Kotlinx_datetimeDayOfWeek
+  public func _bridgeToObjectiveC() -> PowensConnect.__Kotlinx_datetimeDayOfWeek
+  public typealias _ObjectiveCType = PowensConnect.__Kotlinx_datetimeDayOfWeek
+  public static func == (a: PowensConnect.Kotlinx_datetimeDayOfWeek, b: PowensConnect.Kotlinx_datetimeDayOfWeek) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.Kotlinx_datetimeDayOfWeek]
+  public static var allCases: [PowensConnect.Kotlinx_datetimeDayOfWeek] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Kotlinx_datetimeDayOfWeek {
+  public func toKotlinEnum() -> PowensConnect.__Kotlinx_datetimeDayOfWeek
+}
+extension PowensConnect.__Kotlinx_datetimeDayOfWeek {
+  public func toSwiftEnum() -> PowensConnect.Kotlinx_datetimeDayOfWeek
+}
+@frozen public enum Kotlinx_datetimeMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeMonth, result: inout PowensConnect.Kotlinx_datetimeMonth?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeMonth, result: inout PowensConnect.Kotlinx_datetimeMonth?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Kotlinx_datetimeMonth?) -> PowensConnect.Kotlinx_datetimeMonth
+  public func _bridgeToObjectiveC() -> PowensConnect.__Kotlinx_datetimeMonth
+  public typealias _ObjectiveCType = PowensConnect.__Kotlinx_datetimeMonth
+  public static func == (a: PowensConnect.Kotlinx_datetimeMonth, b: PowensConnect.Kotlinx_datetimeMonth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.Kotlinx_datetimeMonth]
+  public static var allCases: [PowensConnect.Kotlinx_datetimeMonth] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Kotlinx_datetimeMonth {
+  public func toKotlinEnum() -> PowensConnect.__Kotlinx_datetimeMonth
+}
+extension PowensConnect.__Kotlinx_datetimeMonth {
+  public func toSwiftEnum() -> PowensConnect.Kotlinx_datetimeMonth
+}
+extension PowensConnect.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(PowensConnect.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: PowensConnect.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_jsonJsonPrimitive
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_jsonJsonPrimitive
+extension PowensConnect.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(PowensConnect.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: PowensConnect.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_jsonJsonElement
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_jsonJsonElement
+extension PowensConnect.Skie.KotlinxSerializationJson.Json {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `default`(PowensConnect.Kotlinx_serialization_jsonJson.Default)
+    case `else`
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationJson.Json.__Sealed, b: PowensConnect.Skie.KotlinxSerializationJson.Json.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationJson.Json.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_jsonJson
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationJson.Json.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_jsonJson
+extension PowensConnect.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: PowensConnect.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: PowensConnect.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: PowensConnect.Ktor_utilsPipeline<TSubject, TContext>) -> PowensConnect.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension PowensConnect.Skie.KtorUtils.Pipeline.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+  #endif
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsWeekDay, result: inout PowensConnect.Ktor_utilsWeekDay?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsWeekDay, result: inout PowensConnect.Ktor_utilsWeekDay?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsWeekDay?) -> PowensConnect.Ktor_utilsWeekDay
+  public func _bridgeToObjectiveC() -> PowensConnect.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = PowensConnect.__Ktor_utilsWeekDay
+  public typealias Companion = PowensConnect.__Ktor_utilsWeekDay.Companion
+  public static func == (a: PowensConnect.Ktor_utilsWeekDay, b: PowensConnect.Ktor_utilsWeekDay) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.Ktor_utilsWeekDay]
+  public static var allCases: [PowensConnect.Ktor_utilsWeekDay] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> PowensConnect.__Ktor_utilsWeekDay
+}
+extension PowensConnect.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> PowensConnect.Ktor_utilsWeekDay
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__Ktor_utilsMonth.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsMonth, result: inout PowensConnect.Ktor_utilsMonth?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsMonth, result: inout PowensConnect.Ktor_utilsMonth?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__Ktor_utilsMonth?) -> PowensConnect.Ktor_utilsMonth
+  public func _bridgeToObjectiveC() -> PowensConnect.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = PowensConnect.__Ktor_utilsMonth
+  public typealias Companion = PowensConnect.__Ktor_utilsMonth.Companion
+  public static func == (a: PowensConnect.Ktor_utilsMonth, b: PowensConnect.Ktor_utilsMonth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.Ktor_utilsMonth]
+  public static var allCases: [PowensConnect.Ktor_utilsMonth] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Ktor_utilsMonth {
+  public func toKotlinEnum() -> PowensConnect.__Ktor_utilsMonth
+}
+extension PowensConnect.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> PowensConnect.Ktor_utilsMonth
+}
+extension PowensConnect.Ktor_client_coreHttpClientCall {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: PowensConnect.Ktor_utilsTypeInfo) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: PowensConnect.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any PowensConnect.Ktor_ioByteReadChannel
+  #endif
+}
+extension PowensConnect.Ktor_client_coreHttpClientEngine {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: PowensConnect.Ktor_client_coreHttpRequestData) async throws -> PowensConnect.Ktor_client_coreHttpResponseData
+  #endif
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: PowensConnect.SkieSwiftStateFlow<PowensConnect.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftOptionalFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftOptionalFlow<T>
+  @objc deinit
+}
+#endif
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = PowensConnect.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = PowensConnect.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = PowensConnect.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = PowensConnect.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = PowensConnect.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = PowensConnect.Skie_SuspendResult
+      public enum Canceled {
+        public typealias __Kotlin = PowensConnect.Skie_SuspendResult.Canceled
+      }
+      public enum Error {
+        public typealias __Kotlin = PowensConnect.Skie_SuspendResult.Error
+      }
+      public enum Success {
+        public typealias __Kotlin = PowensConnect.Skie_SuspendResult.Success
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = PowensConnect.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = PowensConnect.Kotlinx_coroutines_coreRunnable
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectClause2 {
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectInstance {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = PowensConnect.Skie.KotlinxCoroutinesCore
+  public enum Lib {
+    public enum HttpResponse {
+    }
+    public enum CalendarBound {
+    }
+    public enum WebviewCallbackResult {
+    }
+    public enum WebviewConnectCallbackResult {
+    }
+    public enum WebviewManageCallbackResult {
+    }
+  }
+  public typealias powens_sdk__lib = PowensConnect.Skie.Lib
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = PowensConnect.Skie.KtorUtils
+  public enum KotlinxSerializationCore {
+    public enum PolymorphicKind {
+    }
+    public enum SerialKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+    public enum SerializersModule {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = PowensConnect.Skie.KotlinxSerializationCore
+  public enum KtorHttp {
+    public enum PartData {
+    }
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = PowensConnect.Skie.KtorHttp
+  public enum KotlinxSerializationJson {
+    public enum Json {
+    }
+    public enum JsonPrimitive {
+    }
+    public enum JsonElement {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = PowensConnect.Skie.KotlinxSerializationJson
+}
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public var value: T {
+    get
+  }
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftStateFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftFlow<T>) -> PowensConnect.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftFlow<T>) -> PowensConnect.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>) -> PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+extension PowensConnect.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: PowensConnect.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>)
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var value: T? {
+    get
+  }
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftOptionalStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalStateFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftOptionalStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftSharedFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T?) async throws
+  #endif
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public var subscriptionCount: PowensConnect.SkieSwiftStateFlow<PowensConnect.KotlinInt> {
+    get
+  }
+  final public var value: T? {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftOptionalMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T?] {
+    get
+  }
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T?>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftOptionalSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: PowensConnect.SkieSwiftStateFlow<PowensConnect.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftMutableSharedFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableSharedFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftMutableSharedFlow<T>
+  @objc deinit
+}
+#endif
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = PowensConnect.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = PowensConnect.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func emit(value: T) async throws
+  #endif
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: PowensConnect.SkieSwiftStateFlow<PowensConnect.KotlinInt> {
+    get
+  }
+  final public var value: T {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  final public func makeAsyncIterator() -> PowensConnect.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> PowensConnect.SkieSwiftMutableStateFlow<T>._ObjectiveCType
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout PowensConnect.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.SkieSwiftMutableStateFlow<T>._ObjectiveCType?) -> PowensConnect.SkieSwiftMutableStateFlow<T>
+  @objc deinit
+}
+#endif
+extension PowensConnect.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(PowensConnect.Skie_SuspendResult.Canceled)
+    case error(PowensConnect.Skie_SuspendResult.Error)
+    case success(PowensConnect.Skie_SuspendResult.Success)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: PowensConnect.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : PowensConnect.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : PowensConnect.Skie_SuspendResult
+#if compiler(>=5.3) && $RethrowsProtocol
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  public typealias Element = T
+  @objc deinit
+  #if compiler(>=5.3) && $AsyncAwait
+  public func next() async -> PowensConnect.SkieSwiftFlowIterator<T>.Element?
+  #endif
+}
+#endif
+extension PowensConnect.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: PowensConnect.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: PowensConnect.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: PowensConnect.SkieColdFlowIterator<E>) -> PowensConnect.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension PowensConnect.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> PowensConnect.KotlinBoolean
+  #endif
+}
+@frozen public enum AuthCodeAccess : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case single
+  case standard
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__AuthCodeAccess.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeAccess, result: inout PowensConnect.AuthCodeAccess?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeAccess, result: inout PowensConnect.AuthCodeAccess?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeAccess?) -> PowensConnect.AuthCodeAccess
+  public func _bridgeToObjectiveC() -> PowensConnect.__AuthCodeAccess
+  public typealias _ObjectiveCType = PowensConnect.__AuthCodeAccess
+  public typealias Companion = PowensConnect.__AuthCodeAccess.Companion
+  public static func == (a: PowensConnect.AuthCodeAccess, b: PowensConnect.AuthCodeAccess) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.AuthCodeAccess]
+  public static var allCases: [PowensConnect.AuthCodeAccess] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AuthCodeAccess {
+  public func toKotlinEnum() -> PowensConnect.__AuthCodeAccess
+}
+extension PowensConnect.__AuthCodeAccess {
+  public func toSwiftEnum() -> PowensConnect.AuthCodeAccess
+}
+public var defaultMultiValueConverter: (Any?) -> Swift.String {
+  get
+}
+public func collectionDelimiter(collectionFormat: Swift.String) -> Swift.String
+public func toMultiValue(items: PowensConnect.KotlinArray<Swift.AnyObject>, collectionFormat: Swift.String, map: @escaping (Any?) -> Swift.String) -> [Swift.String]
+public func toMultiValue(items: Any, collectionFormat: Swift.String, map: @escaping (Any?) -> Swift.String) -> [Swift.String]
+extension PowensConnect.BodyProvider {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(response: PowensConnect.Ktor_client_coreHttpResponse) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func typedBody(response: PowensConnect.Ktor_client_coreHttpResponse, type: PowensConnect.Ktor_utilsTypeInfo) async throws -> Any
+  #endif
+}
+extension PowensConnect.BankTransactionsApi {
+  public typealias ExpandUpdateUserTransaction = PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction
+}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction {
+  public func toKotlinEnum() -> PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction
+}
+extension PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction {
+  public func toSwiftEnum() -> PowensConnect.BankTransactionsApi.ExpandUpdateUserTransaction
+}
+@frozen public enum __Bridge__BankTransactionsApi_ExpandUpdateUserTransaction : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case account
+  case documents
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.BankTransactionsApi.ExpandUpdateUserTransactionCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction?) -> PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction
+  public func _bridgeToObjectiveC() -> PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction
+  public typealias _ObjectiveCType = PowensConnect.BankTransactionsApi.__ExpandUpdateUserTransaction
+  public static func == (a: PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction, b: PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction]
+  public static var allCases: [PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Skie.Lib.HttpResponse {
+  public struct __Suspend<T> where T : AnyObject {
+    public let __kotlinObject: PowensConnect.HttpResponse<T>
+    public init(_ __kotlinObject: PowensConnect.HttpResponse<T>)
+  }
+}
+public func skie<T>(_ kotlinObject: PowensConnect.HttpResponse<T>) -> PowensConnect.Skie.Lib.HttpResponse.__Suspend<T> where T : AnyObject
+extension PowensConnect.Skie.Lib.HttpResponse.__Suspend {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body() async throws -> T
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func typedBody(type: PowensConnect.Ktor_utilsTypeInfo) async throws -> Any
+  #endif
+}
+extension PowensConnect.BankTransactionsApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUserTransaction(transactionId: Swift.UInt64, all: PowensConnect.KotlinBoolean?, expand: [PowensConnect.BankTransactionsApi.ExpandGetUserTransaction]?) async throws -> PowensConnect.HttpResponse<PowensConnect.Transaction>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listUserTransactions(expand: [PowensConnect.BankTransactionsApi.ExpandListUserTransactions]?, all: PowensConnect.KotlinBoolean?, minDate: PowensConnect.CalendarBound?, maxDate: PowensConnect.CalendarBound?, income: PowensConnect.KotlinBoolean?, deleted: PowensConnect.KotlinBoolean?, lastUpdate: PowensConnect.Kotlinx_datetimeLocalDateTime?, wording: Swift.String?, value: [PowensConnect.TransactionValueFilter]?, search: Swift.String?, offset: PowensConnect.KotlinInt?, limit: PowensConnect.KotlinInt?) async throws -> PowensConnect.HttpResponse<PowensConnect.TransactionsList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateUserTransaction(transactionId: Swift.UInt64, transactionUpdateRequest: PowensConnect.TransactionUpdateRequest, all: PowensConnect.KotlinBoolean?, expand: [PowensConnect.BankTransactionsApi.ExpandUpdateUserTransaction]?) async throws -> PowensConnect.HttpResponse<PowensConnect.Transaction>
+  #endif
+}
+@frozen public enum WebviewErrorCode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case accessDenied
+  case serverError
+  case tosDeclined
+  case sessionExpired
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__WebviewErrorCode.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__WebviewErrorCode, result: inout PowensConnect.WebviewErrorCode?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__WebviewErrorCode, result: inout PowensConnect.WebviewErrorCode?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__WebviewErrorCode?) -> PowensConnect.WebviewErrorCode
+  public func _bridgeToObjectiveC() -> PowensConnect.__WebviewErrorCode
+  public typealias _ObjectiveCType = PowensConnect.__WebviewErrorCode
+  public typealias Companion = PowensConnect.__WebviewErrorCode.Companion
+  public static func == (a: PowensConnect.WebviewErrorCode, b: PowensConnect.WebviewErrorCode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.WebviewErrorCode]
+  public static var allCases: [PowensConnect.WebviewErrorCode] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.WebviewErrorCode {
+  public func toKotlinEnum() -> PowensConnect.__WebviewErrorCode
+}
+extension PowensConnect.__WebviewErrorCode {
+  public func toSwiftEnum() -> PowensConnect.WebviewErrorCode
+}
+@frozen public enum ConnectionState : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case scarequired
+  case webAuthRequired
+  case additionalInformationNeeded
+  case decoupled
+  case validating
+  case actionNeeded
+  case passwordExpired
+  case wrongPass
+  case rateLimiting
+  case websiteUnavailable
+  case bug
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ConnectionState.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionState, result: inout PowensConnect.ConnectionState?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionState, result: inout PowensConnect.ConnectionState?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionState?) -> PowensConnect.ConnectionState
+  public func _bridgeToObjectiveC() -> PowensConnect.__ConnectionState
+  public typealias _ObjectiveCType = PowensConnect.__ConnectionState
+  public typealias Companion = PowensConnect.__ConnectionState.Companion
+  public static func == (a: PowensConnect.ConnectionState, b: PowensConnect.ConnectionState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ConnectionState]
+  public static var allCases: [PowensConnect.ConnectionState] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ConnectionState {
+  public func toKotlinEnum() -> PowensConnect.__ConnectionState
+}
+extension PowensConnect.__ConnectionState {
+  public func toSwiftEnum() -> PowensConnect.ConnectionState
+}
+@frozen public enum AccessTokenType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case permanent
+  case temporary
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__AccessTokenType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__AccessTokenType, result: inout PowensConnect.AccessTokenType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AccessTokenType, result: inout PowensConnect.AccessTokenType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AccessTokenType?) -> PowensConnect.AccessTokenType
+  public func _bridgeToObjectiveC() -> PowensConnect.__AccessTokenType
+  public typealias _ObjectiveCType = PowensConnect.__AccessTokenType
+  public typealias Companion = PowensConnect.__AccessTokenType.Companion
+  public static func == (a: PowensConnect.AccessTokenType, b: PowensConnect.AccessTokenType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.AccessTokenType]
+  public static var allCases: [PowensConnect.AccessTokenType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AccessTokenType {
+  public func toKotlinEnum() -> PowensConnect.__AccessTokenType
+}
+extension PowensConnect.__AccessTokenType {
+  public func toSwiftEnum() -> PowensConnect.AccessTokenType
+}
+extension PowensConnect.BankAccountTypesApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getBankAccountType(typeId: Swift.UInt64) async throws -> PowensConnect.HttpResponse<PowensConnect.BankAccountType>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listBankAccountTypes() async throws -> PowensConnect.HttpResponse<PowensConnect.BankAccountTypesList>
+  #endif
+}
+extension PowensConnect.Skie.Lib.WebviewConnectCallbackResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case webviewCallbackError(PowensConnect.WebviewCallbackError)
+    case webviewConnectCallbackSuccess(PowensConnect.WebviewConnectCallbackSuccess)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.Lib.WebviewConnectCallbackResult.__Sealed, b: PowensConnect.Skie.Lib.WebviewConnectCallbackResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.Lib.WebviewConnectCallbackResult.__Sealed where __Sealed : PowensConnect.WebviewConnectCallbackResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.Lib.WebviewConnectCallbackResult.__Sealed? where __Sealed : PowensConnect.WebviewConnectCallbackResult
+@frozen public enum AccountSchemeName : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case iban
+  case bban
+  case sortCodeAccountNumber
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__AccountSchemeName.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__AccountSchemeName, result: inout PowensConnect.AccountSchemeName?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AccountSchemeName, result: inout PowensConnect.AccountSchemeName?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AccountSchemeName?) -> PowensConnect.AccountSchemeName
+  public func _bridgeToObjectiveC() -> PowensConnect.__AccountSchemeName
+  public typealias _ObjectiveCType = PowensConnect.__AccountSchemeName
+  public typealias Companion = PowensConnect.__AccountSchemeName.Companion
+  public static func == (a: PowensConnect.AccountSchemeName, b: PowensConnect.AccountSchemeName) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.AccountSchemeName]
+  public static var allCases: [PowensConnect.AccountSchemeName] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AccountSchemeName {
+  public func toKotlinEnum() -> PowensConnect.__AccountSchemeName
+}
+extension PowensConnect.__AccountSchemeName {
+  public func toSwiftEnum() -> PowensConnect.AccountSchemeName
+}
+extension PowensConnect.WebviewClient {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func buildConnectUrl(accessToken: Swift.String?, redirectUri: Swift.String, state: Swift.String?, options: PowensConnect.WebviewConnectOptions?) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func buildManageUrl(connectionId: PowensConnect.KotlinLong?, accessToken: Swift.String, redirectUri: Swift.String?, state: Swift.String?, options: PowensConnect.WebviewManageOptions?) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func buildReconnectUrl(connectionId: Swift.Int64, resetCredentials: Swift.Bool, accessToken: Swift.String, redirectUri: Swift.String, state: Swift.String?) async throws -> Swift.String
+  #endif
+}
+@frozen public enum TransactionCounterpartyType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case creditor
+  case debtor
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__TransactionCounterpartyType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__TransactionCounterpartyType, result: inout PowensConnect.TransactionCounterpartyType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__TransactionCounterpartyType, result: inout PowensConnect.TransactionCounterpartyType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__TransactionCounterpartyType?) -> PowensConnect.TransactionCounterpartyType
+  public func _bridgeToObjectiveC() -> PowensConnect.__TransactionCounterpartyType
+  public typealias _ObjectiveCType = PowensConnect.__TransactionCounterpartyType
+  public typealias Companion = PowensConnect.__TransactionCounterpartyType.Companion
+  public static func == (a: PowensConnect.TransactionCounterpartyType, b: PowensConnect.TransactionCounterpartyType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.TransactionCounterpartyType]
+  public static var allCases: [PowensConnect.TransactionCounterpartyType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.TransactionCounterpartyType {
+  public func toKotlinEnum() -> PowensConnect.__TransactionCounterpartyType
+}
+extension PowensConnect.__TransactionCounterpartyType {
+  public func toSwiftEnum() -> PowensConnect.TransactionCounterpartyType
+}
+@frozen public enum CredentialsFieldType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case text
+  case list
+  case date
+  case number
+  case password
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__CredentialsFieldType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__CredentialsFieldType, result: inout PowensConnect.CredentialsFieldType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__CredentialsFieldType, result: inout PowensConnect.CredentialsFieldType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__CredentialsFieldType?) -> PowensConnect.CredentialsFieldType
+  public func _bridgeToObjectiveC() -> PowensConnect.__CredentialsFieldType
+  public typealias _ObjectiveCType = PowensConnect.__CredentialsFieldType
+  public typealias Companion = PowensConnect.__CredentialsFieldType.Companion
+  public static func == (a: PowensConnect.CredentialsFieldType, b: PowensConnect.CredentialsFieldType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.CredentialsFieldType]
+  public static var allCases: [PowensConnect.CredentialsFieldType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.CredentialsFieldType {
+  public func toKotlinEnum() -> PowensConnect.__CredentialsFieldType
+}
+extension PowensConnect.__CredentialsFieldType {
+  public func toSwiftEnum() -> PowensConnect.CredentialsFieldType
+}
+@frozen public enum WebviewPath : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case connect
+  case reconnect
+  case manage
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__WebviewPath.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__WebviewPath, result: inout PowensConnect.WebviewPath?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__WebviewPath, result: inout PowensConnect.WebviewPath?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__WebviewPath?) -> PowensConnect.WebviewPath
+  public func _bridgeToObjectiveC() -> PowensConnect.__WebviewPath
+  public typealias _ObjectiveCType = PowensConnect.__WebviewPath
+  public typealias Companion = PowensConnect.__WebviewPath.Companion
+  public static func == (a: PowensConnect.WebviewPath, b: PowensConnect.WebviewPath) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.WebviewPath]
+  public static var allCases: [PowensConnect.WebviewPath] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.WebviewPath {
+  public func toKotlinEnum() -> PowensConnect.__WebviewPath
+}
+extension PowensConnect.__WebviewPath {
+  public func toSwiftEnum() -> PowensConnect.WebviewPath
+}
+@frozen public enum BankAccountUsage : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case privatePersonal
+  case professional
+  case community
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__BankAccountUsage.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountUsage, result: inout PowensConnect.BankAccountUsage?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountUsage, result: inout PowensConnect.BankAccountUsage?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountUsage?) -> PowensConnect.BankAccountUsage
+  public func _bridgeToObjectiveC() -> PowensConnect.__BankAccountUsage
+  public typealias _ObjectiveCType = PowensConnect.__BankAccountUsage
+  public typealias Companion = PowensConnect.__BankAccountUsage.Companion
+  public static func == (a: PowensConnect.BankAccountUsage, b: PowensConnect.BankAccountUsage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.BankAccountUsage]
+  public static var allCases: [PowensConnect.BankAccountUsage] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.BankAccountUsage {
+  public func toKotlinEnum() -> PowensConnect.__BankAccountUsage
+}
+extension PowensConnect.__BankAccountUsage {
+  public func toSwiftEnum() -> PowensConnect.BankAccountUsage
+}
+@frozen public enum ConnectorCapability : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case bank
+  case bankWealth
+  case transfer
+  case document
+  case profile
+  case contact
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ConnectorCapability.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorCapability, result: inout PowensConnect.ConnectorCapability?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorCapability, result: inout PowensConnect.ConnectorCapability?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorCapability?) -> PowensConnect.ConnectorCapability
+  public func _bridgeToObjectiveC() -> PowensConnect.__ConnectorCapability
+  public typealias _ObjectiveCType = PowensConnect.__ConnectorCapability
+  public typealias Companion = PowensConnect.__ConnectorCapability.Companion
+  public static func == (a: PowensConnect.ConnectorCapability, b: PowensConnect.ConnectorCapability) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ConnectorCapability]
+  public static var allCases: [PowensConnect.ConnectorCapability] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ConnectorCapability {
+  public func toKotlinEnum() -> PowensConnect.__ConnectorCapability
+}
+extension PowensConnect.__ConnectorCapability {
+  public func toSwiftEnum() -> PowensConnect.ConnectorCapability
+}
+@frozen public enum ConnectionExpandField : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case connector
+  case sources
+  case accounts
+  case allAccounts
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ConnectionExpandField.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionExpandField, result: inout PowensConnect.ConnectionExpandField?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionExpandField, result: inout PowensConnect.ConnectionExpandField?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectionExpandField?) -> PowensConnect.ConnectionExpandField
+  public func _bridgeToObjectiveC() -> PowensConnect.__ConnectionExpandField
+  public typealias _ObjectiveCType = PowensConnect.__ConnectionExpandField
+  public typealias Companion = PowensConnect.__ConnectionExpandField.Companion
+  public static func == (a: PowensConnect.ConnectionExpandField, b: PowensConnect.ConnectionExpandField) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ConnectionExpandField]
+  public static var allCases: [PowensConnect.ConnectionExpandField] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ConnectionExpandField {
+  public func toKotlinEnum() -> PowensConnect.__ConnectionExpandField
+}
+extension PowensConnect.__ConnectionExpandField {
+  public func toSwiftEnum() -> PowensConnect.ConnectionExpandField
+}
+extension PowensConnect.RenewAccessTokenRequest {
+  public typealias GrantType = PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType
+}
+extension PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType {
+  public func toKotlinEnum() -> PowensConnect.RenewAccessTokenRequest.__GrantType
+}
+extension PowensConnect.RenewAccessTokenRequest.__GrantType {
+  public func toSwiftEnum() -> PowensConnect.RenewAccessTokenRequest.GrantType
+}
+@frozen public enum __Bridge__RenewAccessTokenRequest_GrantType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case clientCredentials
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.RenewAccessTokenRequest.GrantTypeCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.RenewAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.RenewAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.RenewAccessTokenRequest.__GrantType?) -> PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType
+  public func _bridgeToObjectiveC() -> PowensConnect.RenewAccessTokenRequest.__GrantType
+  public typealias _ObjectiveCType = PowensConnect.RenewAccessTokenRequest.__GrantType
+  public static func == (a: PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType, b: PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType]
+  public static var allCases: [PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ServiceAccessTokenRequest {
+  public typealias GrantType = PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType
+}
+extension PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType {
+  public func toKotlinEnum() -> PowensConnect.ServiceAccessTokenRequest.__GrantType
+}
+extension PowensConnect.ServiceAccessTokenRequest.__GrantType {
+  public func toSwiftEnum() -> PowensConnect.ServiceAccessTokenRequest.GrantType
+}
+@frozen public enum __Bridge__ServiceAccessTokenRequest_GrantType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case clientCredentials
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.ServiceAccessTokenRequest.GrantTypeCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.ServiceAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.ServiceAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.ServiceAccessTokenRequest.__GrantType?) -> PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType
+  public func _bridgeToObjectiveC() -> PowensConnect.ServiceAccessTokenRequest.__GrantType
+  public typealias _ObjectiveCType = PowensConnect.ServiceAccessTokenRequest.__GrantType
+  public static func == (a: PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType, b: PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType]
+  public static var allCases: [PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum ServiceErrorCode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case noAccount
+  case wrongPass
+  case websiteUnavailable
+  case tooManySync
+  case connectionLocked
+  case bankMessage
+  case actionNeeded
+  case bug
+  case notSupported
+  case config
+  case keyManager
+  case dataError
+  case forbidden
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ServiceErrorCode.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ServiceErrorCode, result: inout PowensConnect.ServiceErrorCode?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ServiceErrorCode, result: inout PowensConnect.ServiceErrorCode?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ServiceErrorCode?) -> PowensConnect.ServiceErrorCode
+  public func _bridgeToObjectiveC() -> PowensConnect.__ServiceErrorCode
+  public typealias _ObjectiveCType = PowensConnect.__ServiceErrorCode
+  public typealias Companion = PowensConnect.__ServiceErrorCode.Companion
+  public static func == (a: PowensConnect.ServiceErrorCode, b: PowensConnect.ServiceErrorCode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ServiceErrorCode]
+  public static var allCases: [PowensConnect.ServiceErrorCode] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ServiceErrorCode {
+  public func toKotlinEnum() -> PowensConnect.__ServiceErrorCode
+}
+extension PowensConnect.__ServiceErrorCode {
+  public func toSwiftEnum() -> PowensConnect.ServiceErrorCode
+}
+@frozen public enum RequestMethod : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case get
+  case delete
+  case head
+  case options
+  case patch
+  case post
+  case put
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__RequestMethod, result: inout PowensConnect.RequestMethod?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__RequestMethod, result: inout PowensConnect.RequestMethod?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__RequestMethod?) -> PowensConnect.RequestMethod
+  public func _bridgeToObjectiveC() -> PowensConnect.__RequestMethod
+  public typealias _ObjectiveCType = PowensConnect.__RequestMethod
+  public static func == (a: PowensConnect.RequestMethod, b: PowensConnect.RequestMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.RequestMethod]
+  public static var allCases: [PowensConnect.RequestMethod] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.RequestMethod {
+  public func toKotlinEnum() -> PowensConnect.__RequestMethod
+}
+extension PowensConnect.__RequestMethod {
+  public func toSwiftEnum() -> PowensConnect.RequestMethod
+}
+extension PowensConnect.BankTransactionsApi {
+  public typealias ExpandGetUserTransaction = PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction
+}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction {
+  public func toKotlinEnum() -> PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction
+}
+extension PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction {
+  public func toSwiftEnum() -> PowensConnect.BankTransactionsApi.ExpandGetUserTransaction
+}
+@frozen public enum __Bridge__BankTransactionsApi_ExpandGetUserTransaction : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case account
+  case documents
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.BankTransactionsApi.ExpandGetUserTransactionCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction?) -> PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction
+  public func _bridgeToObjectiveC() -> PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction
+  public typealias _ObjectiveCType = PowensConnect.BankTransactionsApi.__ExpandGetUserTransaction
+  public static func == (a: PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction, b: PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction]
+  public static var allCases: [PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.WebviewLauncher {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func connectFlow(accessToken: Swift.String?, state: Swift.String?, options: PowensConnect.WebviewConnectOptions?) async throws -> PowensConnect.FlowHandle
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func manageFlow(accessToken: Swift.String, connectionId: PowensConnect.KotlinLong?, state: Swift.String?, options: PowensConnect.WebviewManageOptions?) async throws -> PowensConnect.FlowHandle
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func reconnectFlow(accessToken: Swift.String, connectionId: Swift.Int64, resetCredentials: Swift.Bool, state: Swift.String?) async throws -> PowensConnect.FlowHandle
+  #endif
+}
+extension PowensConnect.Skie.Lib.WebviewCallbackResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case webviewCallbackError(PowensConnect.WebviewCallbackError)
+    case webviewCallbackSuccess(PowensConnect.WebviewCallbackSuccess)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.Lib.WebviewCallbackResult.__Sealed, b: PowensConnect.Skie.Lib.WebviewCallbackResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.Lib.WebviewCallbackResult.__Sealed where __Sealed : PowensConnect.WebviewCallbackResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.Lib.WebviewCallbackResult.__Sealed? where __Sealed : PowensConnect.WebviewCallbackResult
+@frozen public enum ServiceTokenScope : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case paymentsAdmin
+  case paymentsReadOnly
+  case paymentsAllowSensitive
+  case paymentsValidate
+  case paymentsCancel
+  case payments
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ServiceTokenScope.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ServiceTokenScope, result: inout PowensConnect.ServiceTokenScope?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ServiceTokenScope, result: inout PowensConnect.ServiceTokenScope?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ServiceTokenScope?) -> PowensConnect.ServiceTokenScope
+  public func _bridgeToObjectiveC() -> PowensConnect.__ServiceTokenScope
+  public typealias _ObjectiveCType = PowensConnect.__ServiceTokenScope
+  public typealias Companion = PowensConnect.__ServiceTokenScope.Companion
+  public static func == (a: PowensConnect.ServiceTokenScope, b: PowensConnect.ServiceTokenScope) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ServiceTokenScope]
+  public static var allCases: [PowensConnect.ServiceTokenScope] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ServiceTokenScope {
+  public func toKotlinEnum() -> PowensConnect.__ServiceTokenScope
+}
+extension PowensConnect.__ServiceTokenScope {
+  public func toSwiftEnum() -> PowensConnect.ServiceTokenScope
+}
+@frozen public enum BankAccountExpandField : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case connection
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__BankAccountExpandField.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountExpandField, result: inout PowensConnect.BankAccountExpandField?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountExpandField, result: inout PowensConnect.BankAccountExpandField?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountExpandField?) -> PowensConnect.BankAccountExpandField
+  public func _bridgeToObjectiveC() -> PowensConnect.__BankAccountExpandField
+  public typealias _ObjectiveCType = PowensConnect.__BankAccountExpandField
+  public typealias Companion = PowensConnect.__BankAccountExpandField.Companion
+  public static func == (a: PowensConnect.BankAccountExpandField, b: PowensConnect.BankAccountExpandField) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.BankAccountExpandField]
+  public static var allCases: [PowensConnect.BankAccountExpandField] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.BankAccountExpandField {
+  public func toKotlinEnum() -> PowensConnect.__BankAccountExpandField
+}
+extension PowensConnect.__BankAccountExpandField {
+  public func toSwiftEnum() -> PowensConnect.BankAccountExpandField
+}
+extension PowensConnect.Skie.Lib.WebviewManageCallbackResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case webviewCallbackError(PowensConnect.WebviewCallbackError)
+    case webviewManageCallbackSuccess(PowensConnect.WebviewManageCallbackSuccess)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.Lib.WebviewManageCallbackResult.__Sealed, b: PowensConnect.Skie.Lib.WebviewManageCallbackResult.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.Lib.WebviewManageCallbackResult.__Sealed where __Sealed : PowensConnect.WebviewManageCallbackResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.Lib.WebviewManageCallbackResult.__Sealed? where __Sealed : PowensConnect.WebviewManageCallbackResult
+@frozen public enum TransactionType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case transfer
+  case order
+  case check
+  case deposit
+  case payback
+  case withdrawal
+  case loanPayment
+  case bank
+  case card
+  case deferredCard
+  case summaryCard
+  case unknown
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__TransactionType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__TransactionType, result: inout PowensConnect.TransactionType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__TransactionType, result: inout PowensConnect.TransactionType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__TransactionType?) -> PowensConnect.TransactionType
+  public func _bridgeToObjectiveC() -> PowensConnect.__TransactionType
+  public typealias _ObjectiveCType = PowensConnect.__TransactionType
+  public typealias Companion = PowensConnect.__TransactionType.Companion
+  public static func == (a: PowensConnect.TransactionType, b: PowensConnect.TransactionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.TransactionType]
+  public static var allCases: [PowensConnect.TransactionType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.TransactionType {
+  public func toKotlinEnum() -> PowensConnect.__TransactionType
+}
+extension PowensConnect.__TransactionType {
+  public func toSwiftEnum() -> PowensConnect.TransactionType
+}
+@frozen public enum ConnectorExpandField : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case fields
+  case sources
+  case countries
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__ConnectorExpandField.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorExpandField, result: inout PowensConnect.ConnectorExpandField?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorExpandField, result: inout PowensConnect.ConnectorExpandField?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__ConnectorExpandField?) -> PowensConnect.ConnectorExpandField
+  public func _bridgeToObjectiveC() -> PowensConnect.__ConnectorExpandField
+  public typealias _ObjectiveCType = PowensConnect.__ConnectorExpandField
+  public typealias Companion = PowensConnect.__ConnectorExpandField.Companion
+  public static func == (a: PowensConnect.ConnectorExpandField, b: PowensConnect.ConnectorExpandField) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.ConnectorExpandField]
+  public static var allCases: [PowensConnect.ConnectorExpandField] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.ConnectorExpandField {
+  public func toKotlinEnum() -> PowensConnect.__ConnectorExpandField
+}
+extension PowensConnect.__ConnectorExpandField {
+  public func toSwiftEnum() -> PowensConnect.ConnectorExpandField
+}
+extension PowensConnect.BankTransactionsApi {
+  public typealias ExpandListUserTransactions = PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions
+}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions {
+  public func toKotlinEnum() -> PowensConnect.BankTransactionsApi.__ExpandListUserTransactions
+}
+extension PowensConnect.BankTransactionsApi.__ExpandListUserTransactions {
+  public func toSwiftEnum() -> PowensConnect.BankTransactionsApi.ExpandListUserTransactions
+}
+@frozen public enum __Bridge__BankTransactionsApi_ExpandListUserTransactions : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case account
+  case documents
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.BankTransactionsApi.ExpandListUserTransactionsCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandListUserTransactions, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandListUserTransactions, result: inout PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.BankTransactionsApi.__ExpandListUserTransactions?) -> PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions
+  public func _bridgeToObjectiveC() -> PowensConnect.BankTransactionsApi.__ExpandListUserTransactions
+  public typealias _ObjectiveCType = PowensConnect.BankTransactionsApi.__ExpandListUserTransactions
+  public static func == (a: PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions, b: PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions]
+  public static var allCases: [PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.Skie.Lib.CalendarBound {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case date(PowensConnect.CalendarBound.Date)
+    case year(PowensConnect.CalendarBound.Year)
+    case yearMonth(PowensConnect.CalendarBound.YearMonth)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.Lib.CalendarBound.__Sealed, b: PowensConnect.Skie.Lib.CalendarBound.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.Lib.CalendarBound.__Sealed where __Sealed : PowensConnect.CalendarBound
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.Lib.CalendarBound.__Sealed? where __Sealed : PowensConnect.CalendarBound
+extension PowensConnect.BankAccountsApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUserAccount(accountId: Swift.UInt64, all: PowensConnect.KotlinBoolean?, expand: Swift.Set<PowensConnect.BankAccountExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.BankAccount>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listUserAccounts(all: PowensConnect.KotlinBoolean?, expand: Swift.Set<PowensConnect.BankAccountExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.BankAccountsList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateUserAccount(accountId: Swift.UInt64, bankAccountUpdateRequest: PowensConnect.BankAccountUpdateRequest, all: PowensConnect.KotlinBoolean?, expand: Swift.Set<PowensConnect.BankAccountExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.BankAccount>
+  #endif
+}
+@frozen public enum AuthMechanism : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case credentials
+  case webAuth
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__AuthMechanism.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__AuthMechanism, result: inout PowensConnect.AuthMechanism?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthMechanism, result: inout PowensConnect.AuthMechanism?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthMechanism?) -> PowensConnect.AuthMechanism
+  public func _bridgeToObjectiveC() -> PowensConnect.__AuthMechanism
+  public typealias _ObjectiveCType = PowensConnect.__AuthMechanism
+  public typealias Companion = PowensConnect.__AuthMechanism.Companion
+  public static func == (a: PowensConnect.AuthMechanism, b: PowensConnect.AuthMechanism) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.AuthMechanism]
+  public static var allCases: [PowensConnect.AuthMechanism] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AuthMechanism {
+  public func toKotlinEnum() -> PowensConnect.__AuthMechanism
+}
+extension PowensConnect.__AuthMechanism {
+  public func toSwiftEnum() -> PowensConnect.AuthMechanism
+}
+extension PowensConnect.ExchangeAccessToken {
+  public typealias TokenType = PowensConnect.__Bridge__ExchangeAccessToken_TokenType
+}
+extension PowensConnect.__Bridge__ExchangeAccessToken_TokenType {
+  public func toKotlinEnum() -> PowensConnect.ExchangeAccessToken.__TokenType
+}
+extension PowensConnect.ExchangeAccessToken.__TokenType {
+  public func toSwiftEnum() -> PowensConnect.ExchangeAccessToken.TokenType
+}
+@frozen public enum __Bridge__ExchangeAccessToken_TokenType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case bearer
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.ExchangeAccessToken.TokenTypeCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessToken.__TokenType, result: inout PowensConnect.__Bridge__ExchangeAccessToken_TokenType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessToken.__TokenType, result: inout PowensConnect.__Bridge__ExchangeAccessToken_TokenType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessToken.__TokenType?) -> PowensConnect.__Bridge__ExchangeAccessToken_TokenType
+  public func _bridgeToObjectiveC() -> PowensConnect.ExchangeAccessToken.__TokenType
+  public typealias _ObjectiveCType = PowensConnect.ExchangeAccessToken.__TokenType
+  public static func == (a: PowensConnect.__Bridge__ExchangeAccessToken_TokenType, b: PowensConnect.__Bridge__ExchangeAccessToken_TokenType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__ExchangeAccessToken_TokenType]
+  public static var allCases: [PowensConnect.__Bridge__ExchangeAccessToken_TokenType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum BankAccountTypeName : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case article83
+  case capitalization
+  case card
+  case checking
+  case crowdlending
+  case deposit
+  case joint
+  case lifeInsurance
+  case loan
+  case madelin
+  case market
+  case pea
+  case pee
+  case per
+  case perco
+  case perp
+  case realEstate
+  case rsp
+  case savings
+  case unknown
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__BankAccountTypeName.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountTypeName, result: inout PowensConnect.BankAccountTypeName?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountTypeName, result: inout PowensConnect.BankAccountTypeName?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__BankAccountTypeName?) -> PowensConnect.BankAccountTypeName
+  public func _bridgeToObjectiveC() -> PowensConnect.__BankAccountTypeName
+  public typealias _ObjectiveCType = PowensConnect.__BankAccountTypeName
+  public typealias Companion = PowensConnect.__BankAccountTypeName.Companion
+  public static func == (a: PowensConnect.BankAccountTypeName, b: PowensConnect.BankAccountTypeName) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.BankAccountTypeName]
+  public static var allCases: [PowensConnect.BankAccountTypeName] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.BankAccountTypeName {
+  public func toKotlinEnum() -> PowensConnect.__BankAccountTypeName
+}
+extension PowensConnect.__BankAccountTypeName {
+  public func toSwiftEnum() -> PowensConnect.BankAccountTypeName
+}
+extension PowensConnect.ExchangeAccessTokenRequest {
+  public typealias GrantType = PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType
+}
+extension PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType {
+  public func toKotlinEnum() -> PowensConnect.ExchangeAccessTokenRequest.__GrantType
+}
+extension PowensConnect.ExchangeAccessTokenRequest.__GrantType {
+  public func toSwiftEnum() -> PowensConnect.ExchangeAccessTokenRequest.GrantType
+}
+@frozen public enum __Bridge__ExchangeAccessTokenRequest_GrantType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case authorizationCode
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.ExchangeAccessTokenRequest.GrantTypeCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessTokenRequest.__GrantType, result: inout PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.ExchangeAccessTokenRequest.__GrantType?) -> PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType
+  public func _bridgeToObjectiveC() -> PowensConnect.ExchangeAccessTokenRequest.__GrantType
+  public typealias _ObjectiveCType = PowensConnect.ExchangeAccessTokenRequest.__GrantType
+  public static func == (a: PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType, b: PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType]
+  public static var allCases: [PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AuthenticationApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func exchangeAccessToken(exchangeAccessTokenRequest: PowensConnect.ExchangeAccessTokenRequest?) async throws -> PowensConnect.HttpResponse<PowensConnect.ExchangeAccessToken>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAuthCode(type: PowensConnect.AuthenticationApi.TypeGetAuthCode?) async throws -> PowensConnect.HttpResponse<PowensConnect.AuthCode>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getServiceAccessToken(serviceAccessTokenRequest: PowensConnect.ServiceAccessTokenRequest?) async throws -> PowensConnect.HttpResponse<PowensConnect.ServiceAccessToken>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func doInitUserToken(accessTokenRequest: PowensConnect.AccessTokenRequest?) async throws -> PowensConnect.HttpResponse<PowensConnect.AccessToken>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func renewAccessToken(renewAccessTokenRequest: PowensConnect.RenewAccessTokenRequest?) async throws -> PowensConnect.HttpResponse<PowensConnect.ExchangeAccessToken>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func revokeAccessToken() async throws -> PowensConnect.HttpResponse<PowensConnect.KotlinUnit>
+  #endif
+}
+@frozen public enum LoanType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case mortgage
+  case consumerCredit
+  case revolvingCredit
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__LoanType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__LoanType, result: inout PowensConnect.LoanType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__LoanType, result: inout PowensConnect.LoanType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__LoanType?) -> PowensConnect.LoanType
+  public func _bridgeToObjectiveC() -> PowensConnect.__LoanType
+  public typealias _ObjectiveCType = PowensConnect.__LoanType
+  public typealias Companion = PowensConnect.__LoanType.Companion
+  public static func == (a: PowensConnect.LoanType, b: PowensConnect.LoanType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.LoanType]
+  public static var allCases: [PowensConnect.LoanType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.LoanType {
+  public func toKotlinEnum() -> PowensConnect.__LoanType
+}
+extension PowensConnect.__LoanType {
+  public func toSwiftEnum() -> PowensConnect.LoanType
+}
+@frozen public enum AuthCodeType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case temporary
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.__AuthCodeType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeType, result: inout PowensConnect.AuthCodeType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeType, result: inout PowensConnect.AuthCodeType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__AuthCodeType?) -> PowensConnect.AuthCodeType
+  public func _bridgeToObjectiveC() -> PowensConnect.__AuthCodeType
+  public typealias _ObjectiveCType = PowensConnect.__AuthCodeType
+  public typealias Companion = PowensConnect.__AuthCodeType.Companion
+  public static func == (a: PowensConnect.AuthCodeType, b: PowensConnect.AuthCodeType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.AuthCodeType]
+  public static var allCases: [PowensConnect.AuthCodeType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.AuthCodeType {
+  public func toKotlinEnum() -> PowensConnect.__AuthCodeType
+}
+extension PowensConnect.__AuthCodeType {
+  public func toSwiftEnum() -> PowensConnect.AuthCodeType
+}
+extension PowensConnect.ConnectionsApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func createUserConnection(connectionRequest: [Swift.String : Swift.String], source: Swift.String?, expand: Swift.Set<PowensConnect.ConnectionExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connection>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteUserConnection(connectionId: Swift.UInt64) async throws -> PowensConnect.HttpResponse<PowensConnect.KotlinUnit>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUserConnection(connectionId: Swift.UInt64, expand: Swift.Set<PowensConnect.ConnectionExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connection>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listUserConnections(expand: Swift.Set<PowensConnect.ConnectionExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.ConnectionsList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func openWebAuth(clientId: Swift.UInt64, token: Swift.String, redirectUri: Swift.String, idConnector: PowensConnect.KotlinULong?, connectorUuid: Swift.String?, idConnection: PowensConnect.KotlinULong?, source: Swift.String?, state: Swift.String?) async throws -> PowensConnect.HttpResponse<PowensConnect.KotlinUnit>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateSyncUserConnection(connectionId: Swift.UInt64, source: Swift.String?, background: PowensConnect.KotlinBoolean?, expand: Swift.Set<PowensConnect.ConnectionExpand>?, connectionUpdateRequest: [Swift.String : Swift.String]?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connection>
+  #endif
+}
+extension PowensConnect.ConnectorsApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func batchEnableConnectorsById(connectorIds: Swift.Set<PowensConnect.KotlinULong>, expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.ConnectorsList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getBank(connectorId: Swift.UInt64, expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connector>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getConnector(connectorId: Swift.UInt64, expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connector>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getConnectorByUuid(connectorUuid: Swift.String, expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connector>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getProvider(connectorId: Swift.UInt64, expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.Connector>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listBanks(expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.BanksList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listConnectors(expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.ConnectorsList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func listProviders(expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.ProvidersList>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateConnectors(requestBody: [Swift.String : PowensConnect.ConnectorPatch], expand: Swift.Set<PowensConnect.ConnectorExpand>?) async throws -> PowensConnect.HttpResponse<PowensConnect.ConnectorsList>
+  #endif
+}
+extension PowensConnect.ApiClient {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func jsonRequest(requestConfig: PowensConnect.RequestConfig<Swift.AnyObject>, body: Any?, authNames: [Swift.String]) async throws -> PowensConnect.Ktor_client_coreHttpResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func multipartFormRequest(requestConfig: PowensConnect.RequestConfig<Swift.AnyObject>, body: [PowensConnect.Ktor_httpPartData]?, authNames: [Swift.String]) async throws -> PowensConnect.Ktor_client_coreHttpResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func request(requestConfig: PowensConnect.RequestConfig<Swift.AnyObject>, body: Any?, authNames: [Swift.String]) async throws -> PowensConnect.Ktor_client_coreHttpResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func urlEncodedFormRequest(requestConfig: PowensConnect.RequestConfig<Swift.AnyObject>, body: (any PowensConnect.Ktor_httpParameters)?, authNames: [Swift.String]) async throws -> PowensConnect.Ktor_client_coreHttpResponse
+  #endif
+}
+extension Swift.String {
+  public var absoluteValue: Swift.String {
+    get
+  }
+}
+extension PowensConnect.UsersApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteUser() async throws -> PowensConnect.HttpResponse<PowensConnect.KotlinUnit>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getUser() async throws -> PowensConnect.HttpResponse<PowensConnect.User>
+  #endif
+}
+extension PowensConnect.AuthenticationApi {
+  public typealias TypeGetAuthCode = PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode
+}
+extension PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode {
+  public func toKotlinEnum() -> PowensConnect.AuthenticationApi.__TypeGetAuthCode
+}
+extension PowensConnect.AuthenticationApi.__TypeGetAuthCode {
+  public func toSwiftEnum() -> PowensConnect.AuthenticationApi.TypeGetAuthCode
+}
+@frozen public enum __Bridge__AuthenticationApi_TypeGetAuthCode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case requestAccess
+  case singleAccess
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: PowensConnect.AuthenticationApi.TypeGetAuthCodeCompanion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.AuthenticationApi.__TypeGetAuthCode, result: inout PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.AuthenticationApi.__TypeGetAuthCode, result: inout PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.AuthenticationApi.__TypeGetAuthCode?) -> PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode
+  public func _bridgeToObjectiveC() -> PowensConnect.AuthenticationApi.__TypeGetAuthCode
+  public typealias _ObjectiveCType = PowensConnect.AuthenticationApi.__TypeGetAuthCode
+  public static func == (a: PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode, b: PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode]
+  public static var allCases: [PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: PowensConnect.__KotlinKVariance, result: inout PowensConnect.KotlinKVariance?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: PowensConnect.__KotlinKVariance, result: inout PowensConnect.KotlinKVariance?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: PowensConnect.__KotlinKVariance?) -> PowensConnect.KotlinKVariance
+  public func _bridgeToObjectiveC() -> PowensConnect.__KotlinKVariance
+  public typealias _ObjectiveCType = PowensConnect.__KotlinKVariance
+  public static func == (a: PowensConnect.KotlinKVariance, b: PowensConnect.KotlinKVariance) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [PowensConnect.KotlinKVariance]
+  public static var allCases: [PowensConnect.KotlinKVariance] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension PowensConnect.KotlinKVariance {
+  public func toKotlinEnum() -> PowensConnect.__KotlinKVariance
+}
+extension PowensConnect.__KotlinKVariance {
+  public func toSwiftEnum() -> PowensConnect.KotlinKVariance
+}
+extension PowensConnect.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+  #endif
+}
+extension PowensConnect.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
+}
+extension PowensConnect.Kotlinx_coroutines_coreJob {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+  #endif
+}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any PowensConnect.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any PowensConnect.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any PowensConnect.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectInstance
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectInstance
+extension PowensConnect.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause2
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause2
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause0
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause0
+extension PowensConnect.Kotlinx_coroutines_coreFlow {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any PowensConnect.Kotlinx_coroutines_coreFlowCollector) async throws
+  #endif
+}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause1
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : PowensConnect.Kotlinx_coroutines_coreSelectClause1
+extension PowensConnect.Ktor_ioByteReadChannel {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func discard(max: Swift.Int64) async throws -> PowensConnect.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func peekTo(destination: PowensConnect.Ktor_ioMemory, destinationOffset: Swift.Int64, offset: Swift.Int64, min: Swift.Int64, max: Swift.Int64) async throws -> PowensConnect.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: PowensConnect.Ktor_ioChunkBuffer) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: PowensConnect.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readAvailable(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readBoolean() async throws -> PowensConnect.KotlinBoolean
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readByte() async throws -> PowensConnect.KotlinByte
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readDouble() async throws -> PowensConnect.KotlinDouble
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFloat() async throws -> PowensConnect.KotlinFloat
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: PowensConnect.Ktor_ioChunkBuffer, n: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: PowensConnect.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readFully(dst: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readInt() async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readLong() async throws -> PowensConnect.KotlinLong
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readPacket(size: Swift.Int32) async throws -> PowensConnect.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readRemaining(limit: Swift.Int64) async throws -> PowensConnect.Ktor_ioByteReadPacket
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readShort() async throws -> PowensConnect.KotlinShort
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use read { } instead.")
+  public func readSuspendableSession(consumer: any PowensConnect.KotlinSuspendFunction1) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8Line(limit: Swift.Int32) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func readUTF8LineTo(out: any PowensConnect.KotlinAppendable, limit: Swift.Int32) async throws -> PowensConnect.KotlinBoolean
+  #endif
+}
+extension PowensConnect.Ktor_ioByteWriteChannel {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitFreeSpace() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: PowensConnect.Ktor_ioChunkBuffer) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: PowensConnect.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeAvailable(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws -> PowensConnect.KotlinInt
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeByte(b: Swift.Int8) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeDouble(d: Swift.Double) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFloat(f: Swift.Float) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(memory: PowensConnect.Ktor_ioMemory, startIndex: Swift.Int32, endIndex: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: PowensConnect.Ktor_ioBuffer) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: PowensConnect.KotlinByteArray, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int32, length: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeFully(src: Swift.UnsafeMutableRawPointer, offset: Swift.Int64, length: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeInt(i: Swift.Int32) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeLong(l: Swift.Int64) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writePacket(packet: PowensConnect.Ktor_ioByteReadPacket) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeShort(s: Swift.Int16) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  @available(*, deprecated, message: "Use write { } instead.")
+  public func writeSuspendSession(visitor: any PowensConnect.KotlinSuspendFunction1) async throws
+  #endif
+}
+extension PowensConnect.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(PowensConnect.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(PowensConnect.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(PowensConnect.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(PowensConnect.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: PowensConnect.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_coreStructureKind
+extension PowensConnect.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(PowensConnect.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(PowensConnect.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(PowensConnect.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(PowensConnect.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(PowensConnect.Kotlinx_serialization_coreStructureKind)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: PowensConnect.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_coreSerialKind
+extension PowensConnect.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(PowensConnect.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(PowensConnect.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: PowensConnect.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_corePolymorphicKind
+extension PowensConnect.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: PowensConnect.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_coreSerializersModule
+extension PowensConnect.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(PowensConnect.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(PowensConnect.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(PowensConnect.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(PowensConnect.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(PowensConnect.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(PowensConnect.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(PowensConnect.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(PowensConnect.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(PowensConnect.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: PowensConnect.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : PowensConnect.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : PowensConnect.Kotlinx_serialization_corePrimitiveKind
+extension PowensConnect.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(PowensConnect.Ktor_httpOutgoingContent.ByteArrayContent)
+    case noContent(PowensConnect.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(PowensConnect.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(PowensConnect.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(PowensConnect.Ktor_httpOutgoingContent.WriteChannelContent)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KtorHttp.OutgoingContent.__Sealed, b: PowensConnect.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : PowensConnect.Ktor_httpOutgoingContent
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : PowensConnect.Ktor_httpOutgoingContent
+extension PowensConnect.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any PowensConnect.Ktor_ioByteReadChannel, output: any PowensConnect.Ktor_ioByteWriteChannel, engineContext: any PowensConnect.KotlinCoroutineContext, userContext: any PowensConnect.KotlinCoroutineContext) async throws -> any PowensConnect.Kotlinx_coroutines_coreJob
+  #endif
+}
+extension PowensConnect.Ktor_httpOutgoingContent.WriteChannelContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any PowensConnect.Ktor_ioByteWriteChannel) async throws
+  #endif
+}
+extension PowensConnect.Skie.KtorHttp.PartData {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case binaryChannelItem(PowensConnect.Ktor_httpPartData.BinaryChannelItem)
+    case binaryItem(PowensConnect.Ktor_httpPartData.BinaryItem)
+    case fileItem(PowensConnect.Ktor_httpPartData.FileItem)
+    case formItem(PowensConnect.Ktor_httpPartData.FormItem)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PowensConnect.Skie.KtorHttp.PartData.__Sealed, b: PowensConnect.Skie.KtorHttp.PartData.__Sealed) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> PowensConnect.Skie.KtorHttp.PartData.__Sealed where __Sealed : PowensConnect.Ktor_httpPartData
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> PowensConnect.Skie.KtorHttp.PartData.__Sealed? where __Sealed : PowensConnect.Ktor_httpPartData
+extension PowensConnect.Kotlinx_datetimeDayOfWeek : Swift.Sendable {}
+extension PowensConnect.Kotlinx_datetimeMonth : Swift.Sendable {}
+extension PowensConnect.Ktor_utilsWeekDay : Swift.Sendable {}
+extension PowensConnect.Ktor_utilsMonth : Swift.Sendable {}
+extension PowensConnect.AuthCodeAccess : Swift.Sendable {}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandUpdateUserTransaction : Swift.Sendable {}
+extension PowensConnect.WebviewErrorCode : Swift.Sendable {}
+extension PowensConnect.ConnectionState : Swift.Sendable {}
+extension PowensConnect.AccessTokenType : Swift.Sendable {}
+extension PowensConnect.AccountSchemeName : Swift.Sendable {}
+extension PowensConnect.TransactionCounterpartyType : Swift.Sendable {}
+extension PowensConnect.CredentialsFieldType : Swift.Sendable {}
+extension PowensConnect.WebviewPath : Swift.Sendable {}
+extension PowensConnect.BankAccountUsage : Swift.Sendable {}
+extension PowensConnect.ConnectorCapability : Swift.Sendable {}
+extension PowensConnect.ConnectionExpandField : Swift.Sendable {}
+extension PowensConnect.__Bridge__RenewAccessTokenRequest_GrantType : Swift.Sendable {}
+extension PowensConnect.__Bridge__ServiceAccessTokenRequest_GrantType : Swift.Sendable {}
+extension PowensConnect.ServiceErrorCode : Swift.Sendable {}
+extension PowensConnect.RequestMethod : Swift.Sendable {}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandGetUserTransaction : Swift.Sendable {}
+extension PowensConnect.ServiceTokenScope : Swift.Sendable {}
+extension PowensConnect.BankAccountExpandField : Swift.Sendable {}
+extension PowensConnect.TransactionType : Swift.Sendable {}
+extension PowensConnect.ConnectorExpandField : Swift.Sendable {}
+extension PowensConnect.__Bridge__BankTransactionsApi_ExpandListUserTransactions : Swift.Sendable {}
+extension PowensConnect.AuthMechanism : Swift.Sendable {}
+extension PowensConnect.__Bridge__ExchangeAccessToken_TokenType : Swift.Sendable {}
+extension PowensConnect.BankAccountTypeName : Swift.Sendable {}
+extension PowensConnect.__Bridge__ExchangeAccessTokenRequest_GrantType : Swift.Sendable {}
+extension PowensConnect.LoanType : Swift.Sendable {}
+extension PowensConnect.AuthCodeType : Swift.Sendable {}
+extension PowensConnect.__Bridge__AuthenticationApi_TypeGetAuthCode : Swift.Sendable {}
+extension PowensConnect.KotlinKVariance : Swift.Sendable {}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension PowensConnect.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension PowensConnect.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}

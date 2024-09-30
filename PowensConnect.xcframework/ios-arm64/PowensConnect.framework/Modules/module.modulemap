@@ -1,0 +1,11 @@
+framework module PowensConnect {
+    umbrella header "PowensConnect.h"
+
+
+    use Foundation
+}
+
+module PowensConnect.Swift {
+    header "PowensConnect-Swift.h"
+    requires objc
+}
