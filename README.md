@@ -10,8 +10,8 @@ The Powens Connect SDK allows you to quickly and easily implement aggregation jo
 pod init
 ```
 3. Add this line to your Podfile:
-```
-pod ‘PowensConnect’
+```objective-c
+pod 'PowensConnect'
 ```
 4. Run the following command:
 ```
@@ -32,7 +32,7 @@ pod update PowensConnect
 # Configuration
 1. Right-click your `Info.plist` file and choose **Open as > Source Code**.
 2. Paste the following into the body of your file (within `<dict>…</dict>`) to configure your Powens domain.
-```
+```xml
 <key>PowensDomain</key>
 <string>YOUR_DOMAIN</string>
 ```
@@ -40,7 +40,7 @@ Replace _YOUR_DOMAIN_ with your actual Powens domain, without the `.biapi.pro` e
 
 3. Paste the following into the body of your file (within `<dict>…</dict>`) to configure the Powens Connect dedicated URL scheme.\
 If you already have custom URL schemes, simply paste the additional `CFBundleURLSchemes` to your `CFBundleURLTypes` array.
-```
+```xml
 <key>CFBundleURLTypes</key>
 <array>
 	<dict>
@@ -55,14 +55,14 @@ Replace _CLIENT_ID_ with your client application ID. You can find your client ap
 
 # Usage
 1. Register for Powens Webview callback notifications from the view controller you wish to present the Powens Webview from.
-```
+```swift
 // Registering for Webview callback notifications
 // Allows the automatic dismissal of the presented Webview controller from the source controller
 Powens.shared.handler.registerWebviewCallback(sourceViewController: self)
 ```
 2. Open the desired Webview flow among Connect, Manage & Reconnect.\
 Visit our [documentation](https://docs.powens.com/api-reference/overview/webview) for more information about the Webview flows and their usage.
-```
+```swift
 Task {
     do {
         // Building the Connect flow URL and generating a temporary auth code when provided with an access token
@@ -80,7 +80,7 @@ Task {
 }
 ```
 3. Handle the data received from the app callback URL.
-```
+```swift
 do {
     try Powens.shared.handler.handleConnectCallback(url: url) { result in
         switch onEnum(of: result) {
