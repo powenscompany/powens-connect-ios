@@ -104,7 +104,7 @@ do {
     NSLog(error.localizedDescription)
 }
 ```
-Please refer to the example Xcode project from this repository for a complete example of the PowensConnect SDK usage.
+Please refer to the [example Xcode project](https://github.com/powenscompany/powens-connect-ios/tree/main/Example/connect-ios-demo) from this repository for a complete example of the PowensConnect SDK usage.
 
 # License
 The Powens Connect SDK is available under the LGPLv3 license. See the [LICENSE](https://github.com/powenscompany/powens-connect-ios/blob/main/LICENSE) file for more information.
