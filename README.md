@@ -11,7 +11,7 @@ pod init
 ```
 3. Add this line to your Podfile:
 ```objective-c
-pod 'PowensConnect'
+pod 'PowensConnect', '1.0.0-beta'
 ```
 4. Run the following command:
 ```
