@@ -1,0 +1,6 @@
+target 'connect-ios-demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'PowensConnect', '1.0.0-beta'
+end

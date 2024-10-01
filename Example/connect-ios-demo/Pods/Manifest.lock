@@ -1,0 +1,16 @@
+PODS:
+  - PowensConnect (1.0.0-beta)
+
+DEPENDENCIES:
+  - PowensConnect (= 1.0.0-beta)
+
+SPEC REPOS:
+  trunk:
+    - PowensConnect
+
+SPEC CHECKSUMS:
+  PowensConnect: c7299851a261f4f0210fe351d9de61b774851386
+
+PODFILE CHECKSUM: 6923d5cb73c5e7972536a1d8a0dac1842083eccd
+
+COCOAPODS: 1.15.2
